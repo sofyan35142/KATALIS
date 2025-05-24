@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<!-- Mirrored from themezhub.net/odex-live/odex/order-history.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 03:55:03 GMT -->
+<!-- Mirrored from themezhub.net/odex-live/odex/account-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 03:55:03 GMT -->
 <head>
 		<meta charset="utf-8" />
 		<meta name="author" content="www.frebsite.nl" />
@@ -32,8 +32,9 @@
             <!-- Top header  -->
             <!-- ============================================================== -->
             <!-- Start Navigation -->
-						<div class="header">
+			<div class="header">
 			
+				
 				<!-- Main header -->
 				<div class="main_header">
 					<div class="container">
@@ -187,7 +188,6 @@
 					</div>
 					
 				</div>
-				
 			</div>
 			<!-- End Navigation -->
 			<div class="clearfix"></div>
@@ -202,12 +202,12 @@
 						
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<div class="text-center">
-								<h2 class="breadcrumbs_title">My All Orders</h2>
+								<h2 class="breadcrumbs_title">Account Settings</h2>
 								<nav aria-label="breadcrumb">
 								  <ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="#"><i class="ti-home"></i></a></li>
 									<li class="breadcrumb-item"><a href="#">My Account</a></li>
-									<li class="breadcrumb-item active" aria-current="page">My Orders</li>
+									<li class="breadcrumb-item active" aria-current="page">Account Settings</li>
 								  </ol>
 								</nav>
 							</div>
@@ -219,7 +219,7 @@
 			<!-- =========================== Breadcrumbs =================================== -->
 			
 			
-			<!-- =========================== My All Orders =================================== -->
+			<!-- =========================== Account Settings =================================== -->
 			<section class="gray">
 				<div class="container">
 					<div class="row">
@@ -230,7 +230,7 @@
 								<a class="list-group-item list-group-item-action dropright-toggle" href="order.html">
 								  My Order
 								</a>
-								<a class="list-group-item list-group-item-action dropright-toggle active" href="order-history.html">
+								<a class="list-group-item list-group-item-action dropright-toggle" href="order-history.html">
 								  Order History
 								</a>
 								<!-- <a class="list-group-item list-group-item-action dropright-toggle" href="order-tracking.html">
@@ -239,7 +239,7 @@
 								<a class="list-group-item list-group-item-action dropright-toggle" href="wishlist.html">
 								  Wishlist
 								</a>
-								<a class="list-group-item list-group-item-action dropright-toggle" href="account-info.html">
+								<a class="list-group-item list-group-item-action dropright-toggle active" href="account-info.html">
 								  Account Settings
 								</a>
 								<a class="list-group-item list-group-item-action dropright-toggle" href="payment-methode.html">
@@ -253,94 +253,129 @@
 						</div>
 						
 						<div class="col-lg-8 col-md-9">
-						
-							<!-- Order Items -->
+							<!-- Total Items -->
 							<div class="card style-2">
 								<div class="card-header">
-									<h4 class="mb-0">Total Order</h4>
+									<h4 class="mb-0">Account Detail</h4>
 								</div>
 								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table">
-											<thead>
-												<tr>
-													<th scope="col">Product</th>
-													<th scope="col">Order No.</th>
-													<th scope="col">Shipping Date</th>
-													<th scope="col">Price</th>
-													<th scope="col">Status</th>
-													<th scope="col">Action</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">
-														<div class="tbl_cart_product">
-															<div class="tbl_cart_product_thumb m-0">
-																<img src="assets/img/vegetables/1.png" class="img-fluid" alt="">
-															</div>
+									<form class="submit-page">
+										<div class="row">
+										
+											<div class="col-12 col-md-6">
+											  <!-- Email -->
+											  <div class="form-group">
+												<label>First Name *</label>
+												<input class="form-control" type="text" placeholder="First Name *" value="Yash" required="">
+											  </div>
+
+											</div>
+										
+											<div class="col-12 col-md-6">
+											  <!-- Last Name -->
+											  <div class="form-group">
+												<label>Last Name *</label>
+												<input class="form-control" type="text" placeholder="Last Name *" value="Verma" required="">
+											  </div>
+
+											</div>
+										
+											<div class="col-12">
+												<!-- Email -->
+												<div class="form-group">
+													<label> Email Address *</label>
+													<input class="form-control" type="email" placeholder="Email Address *" value="yash77@gmail.com" required="">
+												</div>
+											</div>
+										
+											<div class="col-12 col-md-6">
+												<!-- Password -->
+												<div class="form-group">
+													<label>Current Password *</label>
+													<input class="form-control" type="password" placeholder="Current Password *" required="">
+												</div>
+											</div>
+										
+											<div class="col-12 col-md-6">
+												<!-- Password -->
+												<div class="form-group">
+													<label>New Password *</label>
+													<input class="form-control" type="password" placeholder="New Password *" required="">
+												</div>
+											</div>
+										
+											<div class="col-12 col-lg-6">
+												<!-- Birthday -->
+												<div class="form-group">
+												
+													<label>Date of Birth</label>
+													<div class="row">
+														<div class="col-auto">
+															<!-- Date -->
+															<label class="sr-only">Date</label>
+															<select class="form-control">
+															  <option>09</option>
+															  <option>10</option>
+															  <option selected="">11</option>
+															</select>
 														</div>
-													</th>
-													<td>8910563</td>
-													<td>10 Jul 2020</td>
-													<td>$89.00</td>
-													<td>In Processing</td>
-													<td><a href="#" class="btn btn-sm btn-theme">Track Order</a></td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="tbl_cart_product">
-															<div class="tbl_cart_product_thumb m-0">
-																<img src="assets/img/vegetables/2.png" class="img-fluid" alt="">
-															</div>
+														
+														<div class="col">
+															<!-- Date -->
+															<label class="sr-only">Month</label>
+															<select class="form-control">
+															  <option>January</option>
+															  <option>February</option>
+															  <option selected="">March</option>
+															</select>
 														</div>
-													</th>
-													<td>8910563</td>
-													<td>10 Jul 2020</td>
-													<td>$89.00</td>
-													<td>Awating Delivery</td>
-													<td><a href="#" class="btn btn-sm btn-theme">Track Order</a></td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="tbl_cart_product">
-															<div class="tbl_cart_product_thumb m-0">
-																<img src="assets/img/vegetables/3.png" class="img-fluid" alt="">
-															</div>
+														
+														<div class="col-auto">
+															<!-- Date -->
+															<label class="sr-only">Year</label>
+															<select class="form-control">
+															  <option>1990</option>
+															  <option selected="">1993</option>
+															  <option>1992</option>
+															</select>
 														</div>
-													</th>
-													<td>8910563</td>
-													<td>10 Jul 2020</td>
-													<td>$89.00</td>
-													<td>In Processing</td>
-													<td><a href="#" class="btn btn-sm btn-theme">Track Order</a></td>
-												</tr>
-												<tr>
-													<th scope="row">
-														<div class="tbl_cart_product">
-															<div class="tbl_cart_product_thumb m-0">
-																<img src="assets/img/vegetables/4.png" class="img-fluid" alt="">
-															</div>
+												  
+													</div>
+												</div>
+
+											</div>
+										
+											<div class="col-12 col-lg-6">
+												<!-- Gender -->
+												<div class="form-group mb-8">
+													<label>Gender</label>
+													<div class="btn-group-toggle mt-2 d-flex bd-highlight">
+														<div class="mr-2">
+															<input id="male" class="radio-custom" name="gen" type="radio">
+															<label for="male" class="radio-custom-label">Male</label>
 														</div>
-													</th>
-													<td>8910563</td>
-													<td>10 Jul 2020</td>
-													<td>$89.00</td>
-													<td>Delivered</td>
-													<td><a href="#" class="btn btn-sm btn-theme">View Order</a></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+														<div class="ml-1">
+															<input id="female" class="radio-custom" name="gen" type="radio">
+															<label for="female" class="radio-custom-label">Female</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-12">
+											  <button class="btn btn-dark" type="submit">Save Changes</button>
+											</div>
+										
+										</div>
+									</form>
 								</div>
 							</div>
-							
-						</div>						
+						</div>
 						
 					</div>
 				</div>
 			</section>
-			<!-- =========================== My All Orders =================================== -->
+			<!-- =========================== Account Settings =================================== -->
 
 			
 			<!-- ============================ Call To Action ================================== --> 
@@ -371,7 +406,7 @@
 			<!-- ============================ Call To Action End ================================== -->
 			
 			<!-- ============================ Footer Start ================================== -->
-				<footer class="dark-footer skin-dark-footer style-2">
+			<footer class="dark-footer skin-dark-footer style-2">
 				<div class="before-footer">
 					<div class="container">
 						<div class="row">
@@ -382,8 +417,8 @@
 										<i class="ti-shopping-cart"></i>
 									</div>
 									<div class="facts_caption">
-										<h4>Gratis Ongkir</h4>
-										<p>Gratis Ongkir Daerah Malang</p>
+										<h4>Free Home Delivery</h4>
+										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p>
 									</div>
 								</div>
 							</div>
@@ -394,8 +429,8 @@
 										<i class="ti-money"></i>
 									</div>
 									<div class="facts_caption">
-										<h4>Pembayaran Mudah</h4>
-										<p>Support Semua Metode Pembayaran</p>
+										<h4>Money Back Guarantee</h4>
+										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p>
 									</div>
 								</div>
 							</div>
@@ -406,8 +441,8 @@
 										<i class="ti-headphone-alt"></i>
 									</div>
 									<div class="facts_caption">
-										<h4>Buka 24 jam</h4>
-										<p>Bisa Beli kapanpun Sesuka hati</p>
+										<h4>24x7 Online Support</h4>
+										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p>
 									</div>
 								</div>
 							</div>
@@ -427,8 +462,8 @@
 									
 									<div class="address_infos">
 										<ul>
-											<li><i class="ti-home theme-cl"></i>Jl. Raya Tlogomas No.246, Babatan, Tegalgondo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144</li>
-											<!-- <li><i class="ti-headphone-alt theme-cl"></i>(41) 254 758 4572</li> -->
+											<li><i class="ti-home theme-cl"></i>#302 Brick Market, Jalsa California<br>United State HQS1130</li>
+											<li><i class="ti-headphone-alt theme-cl"></i>(41) 254 758 4572</li>
 										</ul>
 									</div>
 									
@@ -439,10 +474,10 @@
 								<div class="footer_widget">
 									<h4 class="widget_title">Categories</h4>
 									<ul class="footer-menu">
-										<li><a href="#">Makanan </a></li>
-										<li><a href="#">Snack</a></li>
-										<li><a href="#">Minuman Dingin</a></li>
-										<li><a href="#">Minuman Hangat</a></li>
+										<li><a href="#">Organic</a></li>
+										<li><a href="#">Grocery</a></li>
+										<li><a href="#">Education</a></li>
+										<li><a href="#">Furniture</a></li>
 									</ul>
 								</div>
 							</div>
@@ -492,7 +527,7 @@
 						<div class="row align-items-center">
 							
 							<div class="col-lg-6 col-md-8">
-								<p class="mb-0">©Copyright 2025 Tim Kalis Informatika</p>
+								<p class="mb-0">Â©Copyright 2020 Odex. Designd By <a href="https://bootstrapdesigns.net/">BootstrapDesigns</a>.</p>
 							</div>
 							
 							<div class="col-lg-6 col-md-6 text-right">
@@ -808,5 +843,5 @@
 
 	</body>
 
-<!-- Mirrored from themezhub.net/odex-live/odex/order-history.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 03:55:03 GMT -->
+<!-- Mirrored from themezhub.net/odex-live/odex/account-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 03:55:03 GMT -->
 </html>
