@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from themesbrand.com/minible/layouts/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:30 GMT -->
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Tambah Produk | Katalis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assetsAdmin/images/favicon.ico">
+
+    <!-- select2 css -->
+    <link href="assetsAdmin/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- dropzone css -->
+    <link href="assetsAdmin/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assetsAdmin/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assetsAdmin/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assetsAdmin/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assetsAdmin/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assetsAdmin/images/logo-dark.png" alt="" height="20">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assetsAdmin/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assetsAdmin/images/logo-light.png" alt="" height="20">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button"
+                        class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="uil-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="uil-search"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                       
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assetsAdmin/images/users/avatar-4.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Ananda</span>
+                            <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-user-circle font-size-18 align-middle text-muted me-1"></i> <span
+                                    class="align-middle">View Profile</span></a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-wallet font-size-18 align-middle me-1 text-muted"></i> <span
+                                    class="align-middle">My Wallet</span></a>
+                            <a class="dropdown-item d-block" href="#"><i
+                                    class="uil uil-cog font-size-18 align-middle me-1 text-muted"></i> <span
+                                    class="align-middle">Settings</span> <span
+                                    class="badge bg-success-subtle text-success rounded-pill mt-1 ms-2">03</span></a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-lock-alt font-size-18 align-middle me-1 text-muted"></i> <span
+                                    class="align-middle">Lock screen</span></a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span
+                                    class="align-middle">Sign out</span></a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                            <i class="uil-cog"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+               <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assetsAdmin/images/Logo Katalis no BC.png " alt="" height="42">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assetsAdmin/images/Logo Katalis no BC.png" alt="" height="80">
+                        </span>
+                    </a>
+            </div>
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+
+            <div data-simplebar class="sidebar-menu-scroll">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+
+                        <li>
+                            <a href="index.html">
+                                <i class="uil-home-alt"></i><span
+                                    class="badge rounded-pill bg-primary float-end">01</span>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Apps</li>
+
+                        <li>
+                            <a href="TambahProduk.html" class="waves-effect">
+                                <i class="uil-calender"></i>
+                                <span>Tambah Produk</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="chat.html" class=" waves-effect">
+                                <i class="uil-comments-alt"></i>
+                                <span>Chat</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pesanan.html" class=" waves-effect">
+                                <i class="uil-comments-alt"></i>
+                                <!-- <span class="badge rounded-pill bg-success float-end">New</span> -->
+                                <span>Pesanan</span>
+                            </a>
+                        </li>
+
+                        
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0">Tambah Produk</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item active">Tambah Produk</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="addproduct-accordion" class="custom-accordion">
+                                <div class="card">
+                                    <a href="#addproduct-billinginfo-collapse" class="text-dark "
+                                        data-bs-toggle="collapse" aria-expanded="true"
+                                        aria-controls="addproduct-billinginfo-collapse">
+                                        <div class="p-4">
+
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar-xs">
+                                                        <div
+                                                            class="avatar-title rounded-circle bg-primary-subtle text-primary">
+                                                            01
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-hidden">
+                                                    <h5 class="font-size-16 mb-1">Produk</h5>
+                                                    <p class="text-muted text-truncate mb-0">Informasi Produk</p>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <i class="mdi mdi-chevron-up accor-down-icon font-size-24"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                    <div id="addproduct-billinginfo-collapse" class="collapse show"
+                                        data-bs-parent="#addproduct-accordion">
+                                        <div class="p-4 border-top">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="productname">Nama Produk</label>
+                                                    <input id="productname" name="productname" type="text"
+                                                        class="form-control" placeholder="Masukkan Nama Produk">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="manufacturerbrand">stok
+                                                                Produk</label>
+                                                            <input id="manufacturerbrand" name="manufacturerbrand"
+                                                                type="number" class="form-control"
+                                                                placeholder="Masukkan Stok Produk">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="price">Harga Produk</label>
+                                                            <input id="price" name="price" type="number"
+                                                                class="form-control"
+                                                                placeholder="masukkan Harga Produk">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" class="control-label">Kategori
+                                                                Produk</label>
+                                                            <select class="form-control select2">
+                                                                <option>Select</option>
+                                                                <option value="EL">Makanan Berat</option>
+                                                                <option value="FA">Makanan Ringan</option>
+                                                                <option value="FI">Minumas Dingin</option>
+                                                                <option value="FI">Minumas Panas</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                class="control-label">Varian</label>
+
+                                                            <select class="select2 form-control select2-multiple"
+                                                                multiple="multiple" data-placeholder="Choose ...">
+                                                                <option value="HI">Small</option>
+                                                                <option value="LE">Medium</option>
+                                                                <option value="NO">Large</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-0">
+                                                    <label class="form-label" for="productdesc">Deskripsi Produk</label>
+                                                    <textarea class="form-control" id="productdesc" rows="4"
+                                                        placeholder="Masukkan Deskripsi Produk"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a href="#addproduct-img-collapse" class="text-dark  collapsed"
+                                        data-bs-toggle="collapse" aria-haspopup="true" aria-expanded="false"
+                                        aria-haspopup="true" aria-controls="addproduct-img-collapse">
+                                        <div class="p-4">
+
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar-xs">
+                                                        <div
+                                                            class="avatar-title rounded-circle bg-primary-subtle text-primary">
+                                                            02
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-hidden">
+                                                    <h5 class="font-size-16 mb-1">Produk</h5>
+                                                    <p class="text-muted text-truncate mb-0">Gambar Produk</p>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <i class="mdi mdi-chevron-up accor-down-icon font-size-24"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                    <div id="addproduct-img-collapse" class="collapse"
+                                        data-bs-parent="#addproduct-accordion">
+                                        <div class="p-4 border-top">
+                                            <form action="#" class="dropzone">
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple="multiple">
+                                                </div>
+                                                <div class="dz-message needsclick">
+                                                    <div class="mb-3">
+                                                        <i class="display-4 text-muted uil uil-cloud-upload"></i>
+                                                    </div>
+
+                                                    <h4>Drop files here or click to upload.</h4>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row mb-4">
+                    <div class="col ms-auto">
+                        <div class="d-flex flex-reverse flex-wrap gap-2">
+                            <a href="#" class="btn btn-danger"> <i class="uil uil-times"></i> Cancel </a>
+                            <a href="#" class="btn btn-success"> <i class="uil uil-file-alt"></i> Save </a>
+                        </div>
+                    </div> <!-- end col -->
+                </div> <!-- end row-->
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Katalis.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!-- Right Sidebar -->
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assetsAdmin/libs/jquery/jquery.min.js"></script>
+    <script src="assetsAdmin/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assetsAdmin/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assetsAdmin/libs/simplebar/simplebar.min.js"></script>
+    <script src="assetsAdmin/libs/node-waves/waves.min.js"></script>
+    <script src="assetsAdmin/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assetsAdmin/libs/jquery.counterup/jquery.counterup.min.js"></script>
+
+
+    <!-- select 2 plugin -->
+    <script src="assetsAdmin/libs/select2/js/select2.min.js"></script>
+
+    <!-- dropzone plugin -->
+    <script src="assetsAdmin/libs/dropzone/min/dropzone.min.js"></script>
+
+    <!-- init js -->
+    <script src="assetsAdmin/js/pages/ecommerce-add-product.init.js"></script>
+
+    <!-- App js -->
+    <script src="assetsAdmin/js/app.js"></script>
+
+</body>
+
+<!-- Mirrored from themesbrand.com/minible/layouts/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jun 2025 07:29:30 GMT -->
+
+</html>
